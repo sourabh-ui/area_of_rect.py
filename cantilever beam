@@ -2,13 +2,10 @@ def calculate_stress_strain(F, L, A, E):
     stress = F / A
     strain = L / L0 - 1
     return stress, strain
-
-F_applied = 100000 
-L0 = 1.0  
-A_beam = 0.01  
-E_steel = 200e9  
-
+F_applied = float(input("Enter the applied force (N): "))
+L0 = float(input("Enter the original length of the beam (m): "))
+A_beam = float(input("Enter the cross-sectional area (m^2): "))
+E_steel = float(input("Enter Young's modulus for steel (Pa): "))
 stress_result, strain_result = calculate_stress_strain(F_applied, L0, A_beam, E_steel)
-
 print(f"Stress: {stress_result:.2f} Pa")
 print(f"Strain: {strain_result:.6f}")
