@@ -1,0 +1,72 @@
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+#Python program to check if a string is palindrome or not
+def isPalindrome(string):
+  rev_string = string[::-1]
+  return string == rev_string
+
+x = "Google"
+if isPalindrome(x):
+  print(x,"is a palindrome string")
+else:
+  print(x,"is not a palindrome string") 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Python program to input a string and find total number uppercase and lowercase letters
+print("Input a string: ")
+str1 = input()
+
+no_of_ucase, no_of_lcase = 0,0
+
+for c in str1:
+    if c>='A' and c<='Z':
+        no_of_ucase += 1
+    if c>='a' and c<='z':
+        no_of_lcase += 1
+
+print("Input string is: ", str1)
+print("Total number of uppercase letters: ", no_of_ucase)
+print("Total number of lowercase letters: ", no_of_lcase)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Python program to search for a pattern in string
+n=int(input("Enter number of cities : "))
+
+city=()
+
+for i in range(n):
+    c=input("Enter City : ")
+    city+=(c,)
+
+print(city)
+
+pat=input("Enter Pattern you want to search for? ")
+
+for c in city:
+    if(c.find(pat)!=-1):
+        print(c)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Python program to input a string and find total number of letters and digits
+print("Input a string: ")
+str1 = input()
+
+no_of_letters, no_of_digits = 0,0
+
+for c in str1:
+    if (c>='a' and c<='z') or (c>='A' and c<='Z'):
+        no_of_letters += 1
+    if c>='0' and c<='9':
+        no_of_digits += 1
+
+print("Input string is: ", str1)
+print("Total number of letters: ", no_of_letters)
+print("Total number of digits: ", no_of_digits)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Extract the mobile number from the given string in Python
+import re
+string='''If you would like to get in touch with us through other ways, 
+the Flipkart customer support number is 9309393887. 
+And we're just a call away if you need anything. 
+You can also arrange a call-back from within the 
+Flipkart app regarding any issue related to your order.'''
+Phonenumber=re.compile(r'\d\d\d\d\d\d\d\d\d\d')
+m=Phonenumber.search(string)
+print('mobile number found from the string : ',m.group())
