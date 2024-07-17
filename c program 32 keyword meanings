@@ -1,0 +1,33 @@
+C program 32 keyword’s meaning!
+1.	auto: The default storage class for variables declared inside a function or block. Auto variables are local to the function or block where they are declared.
+2.	break: Used to terminate the innermost loop or switch statement.
+3.	case: Part of the switch statement, allowing execution of different operations based on the value of a single variable.
+4.	char: Used to declare character variables.
+5.	const: Indicates that a variable’s value cannot be modified after initialization.
+6.	continue: Skips to the next iteration of a loop.
+7.	default: Executed when no specific case matches in a switch statement.
+8.	do: Starts a do-while loop.
+9.	double: Used to declare double-precision floating-point variables.
+10.	else: Part of the if-else conditional statement.
+11.	enum: Defines a set of named integer constants.
+12.	extern: Declares a variable or function as existing externally (not defined in the current file).
+13.	float: Used to declare single-precision floating-point variables.
+14.	for: Starts a loop with initialization, condition, and increment/decrement expressions.
+15.	goto: Transfers control to a labeled statement.
+16.	if: Conditional statement for executing code based on a condition.
+17.	int: Used to declare integer variables.
+18.	long: Used to declare long integer variables.
+19.	register: Suggests that a variable be stored in a register for faster access.
+20.	return: Used to exit a function and return a value.
+21.	short: Used to declare short integer variables.
+22.	signed: Specifies that a variable can hold positive and negative values.
+23.	sizeof: Determines the size (in bytes) of a data type or expression.
+24.	static: Indicates that a variable retains its value between function calls.
+25.	struct: Defines a user-defined data structure.
+26.	switch: Used as an alternative to if-else for multiple cases.
+27.	typedef: Creates a new data type alias.
+28.	union: Defines a union data type that can hold different types of data.
+29.	unsigned: Specifies that a variable can hold only non-negative values.
+30.	void: Represents an empty data type or function return type.
+31.	volatile: Suggests that a variable’s value may change unexpectedly (e.g., due to hardware interrupts).
+32.	while: Starts a while loop.
